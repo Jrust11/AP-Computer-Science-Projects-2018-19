@@ -1,0 +1,123 @@
+%Rolling Dice
+%Jacob Rust
+%October 23, 2018
+
+clc; 
+clear all;
+close all;
+
+% ONE DIE
+
+count1 = 0;
+count2 = 0;
+count3 = 0;
+count4 = 0;
+count5 = 0;
+count6 = 0;
+
+%Creates an array of 1000 numbers between 1 and 6
+for(i = 1:1000)
+     rolls(i)  = randi(1 6);
+end
+
+% If a number is equal to a certain number in the array, it adds it to its count 
+for(i = 1:1000)
+  if(rolls(i) == 1)
+      count1 = count1 + 1;
+   end
+    if(rolls(i) == 2)
+        count2 = count2 + 1;
+    end
+    if(rolls(i) == 3)
+        count3 = count3 + 1;
+    end
+    if(rolls(i) == 4)
+        count4 = count4 + 1;
+    end
+    if(rolls(i) == 5)
+        count5 = count5 + 1;
+    end
+    if(rolls(i) == 6)
+        count6 = count6 + 1;
+    end
+
+end
+
+
+% percents of each side of 1000 rolls
+
+count1/1000
+count2/1000
+count3/1000
+count4/1000
+count5/1000
+count6/1000
+
+% TWO DICE
+
+
+a2 = 0;
+a3 = 0;
+a4 = 0;
+a5 = 0;
+a6 = 0;
+a7 = 0;
+a8 = 0;
+a9 = 0;
+a10 = 0;
+a11 = 0;
+a12 = 0;
+
+
+for(i = 1:1000)
+     rolls(i)  = randi(2 12);
+end
+
+for(i = 1:1000)
+    if(rolls(i) == 2 )
+      a2 = a2 +1;
+    end
+    if(rolls(i) == 3)
+        a3 = a3 + 1;
+    end
+    if(rolls(i) == 4)
+        a4 = a4 + 1;
+    end
+    if(rolls(i) == 5)
+        a5 = a5 +1;
+    end
+    if(rolls(i) == 6)
+        a6 = a6 + 1;
+    end
+    if(rolls(i) == 7)
+        a7 = a7 + 1;
+    end
+     if(rolls(i) == 8)
+      a8 = a8 +1;
+    end
+    if(rolls(i) == 9)
+        a9 = a9 + 1;
+    end
+    if(rolls(i) == 10)
+        a10 = a10 + 1;
+    end
+    if(rolls(i) == 11)
+        a11 = a11 +1;
+    end
+    if(rolls(i) == 12)
+        a12 = a12 + 1;
+    end
+
+end
+
+a2/1000
+a3/1000
+a4/1000
+a5/1000
+a6/1000
+a7/1000
+a8/1000
+a9/1000
+a10/1000
+a11/1000
+a12/1000
