@@ -1,0 +1,46 @@
+%Solutions for Assignment#1B
+%Jacob Rust
+%October 17, 2018
+
+clc; 
+clear all;
+close all;
+
+%Question 1
+%Task 1. Evaluate y = a + b * tan(c) for a = 2.7, b = 1.75 and c = pi/6
+a = 2.7;
+
+b = 1.75;
+
+c = pi/6;
+
+y = a + b * tan(c)
+
+
+%Task 2. Find the sum of the series: 1 + 1/2 + 1/3 + /4 + ... + 1/19 + 1/20
+
+q2 = 0;
+for( i = 1:20)
+    q2 = q2+1/i;
+end
+q2
+
+%Task 3. Create an array that consists of 100 random rolls of a 6 sided die. 
+
+numRolls = 100;
+
+for(i = 1:numRolls)
+    rolls(i) = randi(1,6);
+end
+rolls
+
+%Task 4: Use the mean command to find the mean of the 100 rolls from #3
+
+y = mean(rolls)
+
+
+
+%Task 5: Use the hist command to create a histogram of the rolls from #3
+
+hist(rolls)
+

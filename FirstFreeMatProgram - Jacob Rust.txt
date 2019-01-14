@@ -1,0 +1,78 @@
+%First FreeMat Programming Assignment
+%Jacob Rust
+%October 16, 2018
+
+
+clc; 
+clear all;
+close all;
+
+
+%Task 1
+
+x = 3.5;
+y = -1.8;
+z = pi/3;
+
+(x^2 + y^3)*(sin(z))
+
+%Task2
+
+for(i = 1:10)
+    randi(1,6)
+end
+
+%Task 3
+A = [1,3,1;0,5,0;-1,3,-1];
+
+B = [1,2,3;4,5,6;7,8,9];
+
+A*B
+
+B*A
+
+A+B
+
+A-B
+
+2*A+3*B
+
+%Task 4 Not done
+
+d = 2;
+s = 1;
+n = 99;
+
+for(i = 1:1:n)
+    
+    
+    s = s + i;
+    d = d + s;
+    
+end
+
+d
+
+%Task 5
+
+a = (3*pi)/4;
+
+sin(cos(a))
+
+%Task 6
+n = 12;
+factorial = 1;
+for(i = 1:1:n)
+    factorial = factorial*i;
+end
+
+factorial
+
+%Task 7
+
+x = (-pi*4: 0.1: pi*4);
+y= 3 * sin(x);
+
+
+plot(x,3y,'r');
+title('Sine');

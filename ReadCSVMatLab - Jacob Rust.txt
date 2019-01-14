@@ -1,0 +1,15 @@
+%Read CSV Matlab Test
+%Jacob Rust
+%October 16, 2018
+
+
+clc; 
+clear all;
+close all;
+
+data = csvread('test.csv');
+disp(data);
+
+x = data(1:10,1);
+y = data(1:10,2);
+plot(x,y);
