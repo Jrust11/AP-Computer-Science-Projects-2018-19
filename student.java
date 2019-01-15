@@ -1,3 +1,8 @@
+//Name: Jacob Rust
+//Project: Student Class
+
+
+
 
 public class student 
 {
@@ -92,26 +97,44 @@ public class student
 	{
 		
 			
-			student a = new student("Jacob"," Rust","Dublin,Ohio","08/26/01",15,2020,813887,4.6,grade);
-			student b = new student("David"," Xiong","Dublin,Ohio","01/01/01",17,2020,1234567,4.8,grade);
+			student a = new student("Jacob"," Rust","Ohio","01/01/18",15,2020,123567,4.6,grade);
+		
+			student b = new student("David"," Xiong","Ohio","01/01/18",17,2020,1234567,4.8,grade);
+		
 			System.out.print(a.getfirstName());
+		
 			System.out.println(a.getlastName());
+		
 			System.out.println(a.getAddress());
+		
 			System.out.println(a.getDOB());
+		
 			System.out.println(a.getgradYear());
+		
 			System.out.println(a.getstudentID());
+		
 			System.out.println(a.getGPA());
+		
 			System.out.println(a.getCredits());
+		
 			System.out.println(a.getGrade());
 			
 			System.out.print(b.getfirstName());
+		
 			System.out.println(b.getlastName());
+		
 			System.out.println(b.getAddress());
+		
 			System.out.println(b.getDOB());
+		
 			System.out.println(b.getgradYear());
+		
 			System.out.println(b.getstudentID());
+		
 			System.out.println(b.getGPA());
+		
 			System.out.println(b.getCredits());
+		
 			System.out.println(b.getGrade());
 			
 			
