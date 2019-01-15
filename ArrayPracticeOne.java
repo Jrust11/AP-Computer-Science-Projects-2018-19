@@ -1,8 +1,6 @@
-/* 
- * Class: NumberChecker
- * Author: Jacob Rust
- * Date: September 19, 2018
- */
+// Name: Jacob Rust
+// Project: NumberChecker
+ 
 import java.util.Arrays;
 
 public class ArrayPracticeOne 
@@ -27,13 +25,6 @@ public class ArrayPracticeOne
 		System.out.println();
 		
 		
-		/*
-		 * Put code here to reverse the elements in the array.
-		 * Note this means actually reversing the elements, not
-		 * just printing them in reverse order.
-		 */
-		
-		
 		for(int a=0, b = numElements -1; a<numElements/2; a++, b--)
 		{
 			int temp2 = data[a];
@@ -49,7 +40,7 @@ public class ArrayPracticeOne
 		}
 		System.out.println();
 		
-		
+		//Finds the largest element
 		max = data[0];
 		for(int a=0; a<numElements; a++)
 		{
@@ -60,6 +51,7 @@ public class ArrayPracticeOne
 		}
 		System.out.println("The largest element is :" + max);
 		
+		//Finds the smallest element
 		int small = data[0];
 		for(int a=0; a<numElements; a++)
 		{
@@ -72,7 +64,7 @@ public class ArrayPracticeOne
 		
 		
 
-		
+		//Orders the array
 		System.out.print("Order: ");
 		for (int i = 0; i < data.length; i++)
 		{
@@ -105,19 +97,10 @@ public class ArrayPracticeOne
 		
 		
 		
-		
-		
-		
-		
-		
 	}	
 	
 
-
-
-
-
-
+// calculates the mean
 public static double computeMean(double data[])
 {
 	double sum = 0;
@@ -129,6 +112,8 @@ public static double computeMean(double data[])
 }
 
 }
+
+/*=====================================================Sample Output=========================================================*/
 
 /*
  * Unsorted:
