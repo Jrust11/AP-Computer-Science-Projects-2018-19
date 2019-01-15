@@ -1,8 +1,6 @@
-/*
-Class: Simple Game Project - High Low
-Author: Jacob Rust
-  
-*/
+// Name: Jacob Rust
+// Project: Simple Game Project - High Low
+
 import java.awt.*; import BreezyGUI.*;
 
 public class HighLow extends GBFrame {
@@ -40,6 +38,8 @@ public class HighLow extends GBFrame {
 	
 public HighLow() 
 {
+	// creates the interface for the game
+	
 	guessLabel = addLabel("Your Guess",7,1,1,1); 
 	
 	guessField = addIntegerField(0,8,2,1,1); 
@@ -61,6 +61,8 @@ public HighLow()
 	game2Label = addLabel("You guess the #",4,1,1,1);
 }
 
+	// assigns variables and random will be the number the comp. wants you to guess
+	
 	int random = (int)(Math.random()*100+1); 
 	
 	int upper = 100;
@@ -71,7 +73,7 @@ public HighLow()
 	
 public void buttonClicked(Button buttonObj) 
 {
-	
+	// guess the computers #
 	if(buttonObj == checkButton) 
 	{
 		
@@ -100,12 +102,13 @@ public void buttonClicked(Button buttonObj)
 	
 	if(buttonObj == giveupButton) 
 	{
+		// wow. we need a give up button.
 		
 		outputArea.append("The correct answer is " + ""+random+"" + "\n");
 		
 	}
 	
-	
+	// computer guesses your number in 6/7 tries
 	if(buttonObj == toohighButton) 
 	{
 		
@@ -132,16 +135,19 @@ public void buttonClicked(Button buttonObj)
 	
 	if(buttonObj == startButton) 
 	{
-		
+		//Starts at 50 and removes half of what you don't need
+		// ex. if my # is 5 the comp will guess 50 
+		// then, I say it is too high. That means all #'s greater than 50 can be removed and the new range is from 1-50
 		outputArea.append("Is it " + ""+start+"" + "?" + "\n"); 
+		
 	}
 		
 }
 
-
+	// Main
 	public static void main(String[] args) 
 	{
-		
+		// creates the game frame
 		HighLow frm = new HighLow(); frm.setSize(325,400); frm.setVisible(true);
 	
 	}
