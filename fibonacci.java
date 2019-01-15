@@ -1,7 +1,9 @@
-
+// Name: Jacob Rust
+// Project: Fibonacci Sequence
 public class fibonacci 
 {
-
+	
+	//Iterative Fibonacci Sequence
 	public static int itFib(int n)
 	{
 		if(n <= 2)
@@ -26,7 +28,7 @@ public class fibonacci
 	}
 	
 	
-	
+	//Recursive Fibonacci Sequence
 	public static int recFib(int n)
 	{
 		if(n <= 2)
@@ -54,17 +56,7 @@ public class fibonacci
 		{
 			System.out.println("Recursive("+i+")="+ recFib(i));
 		}
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+		
+	}	
+
 }
