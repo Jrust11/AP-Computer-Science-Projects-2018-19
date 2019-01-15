@@ -1,3 +1,7 @@
+// Name: Jacob Rust
+// Project: String Sorter
+
+
 import java.util.ArrayList;
 
 public class SortingStrings 
