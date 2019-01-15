@@ -99,7 +99,7 @@ public class student
 			
 			student a = new student("Jacob"," Rust","Ohio","01/01/18",15,2020,123567,4.6,grade);
 		
-			student b = new student("David"," Xiong","Ohio","01/01/18",17,2020,1234567,4.8,grade);
+			student b = new student("David"," M.","Ohio","01/01/18",17,2020,1234567,4.8,grade);
 		
 			System.out.print(a.getfirstName());
 		
