@@ -1,3 +1,6 @@
+// Name: Jacob Rust
+// Project: Prime Factorization with Recursion
+
 public class PrimeFactorization 
 {
 	public static void main(String[] args)
