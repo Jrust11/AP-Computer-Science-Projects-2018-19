@@ -1,0 +1,81 @@
+# Python Array Practice
+# Jacob Rust
+# September 21, 2017
+
+from random import randint
+
+data = [];
+# create array with random values
+for i in range(0,9):
+    data.append(randint(1,100))
+
+# display the array
+print("Original Array")
+for i in range(0,9):
+    print(data[i])
+
+# put code here to reverse the array
+print('Test')
+
+
+for i in range(0,9):
+    a = 0
+    b = len(data) - 1
+    
+    while (a < b):
+
+        temp = data[b]
+        data[b] = data[a]
+        data[a] = temp
+        a += 1
+        b -= 1
+print(data)
+
+small = data[0]
+a = 0
+for i in range(0,9):
+    if data[a] < small:
+        small = data[a]
+    a = a + 1
+
+print("Smallest is")
+print (small)
+
+big = data[0]
+a = 0
+for i in range(0,9):
+    if data[a] > big:
+        big = data[a]
+    a = a + 1
+
+print("Biggest is")
+print (big)
+
+def computeMean(nums):
+    total = 0.0;
+    i = 0
+    for i in range(0,9):
+        total = total + data[i]
+        i= i + 1
+    return (total/len(nums))
+
+
+
+#Original Array
+#9
+#26
+#53
+#24
+#11
+#12
+#87
+#27
+#94
+#Test
+#[94, 27, 87, 12, 11, 24, 53, 26, 9]
+#Smallest is
+#9
+#Biggest is
+#94
+
+    
